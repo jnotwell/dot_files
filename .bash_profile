@@ -12,3 +12,22 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export CLICOLOR=1
 export EDITOR=vim
 
+####
+
+# UCSC tools
+alias tg='ls -1 /cluster/bin/x86_64 | egrep -i'
+alias hgsql='mysql --user=genome --host=genome-mysql.cse.ucsc.edu -A'
+
+# gnu utils
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+# terminal configuration 
+export CLICOLOR=1
+export EDITOR=vim
+export GNUTERM=x11
+
+# misc.
+alias untar='tar -xvf'
+
+
