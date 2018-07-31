@@ -1,4 +1,4 @@
-# terminal configuration
+# terminal configuration 
 export CLICOLOR=1
 export EDITOR=vim
 
@@ -6,14 +6,18 @@ export EDITOR=vim
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
-alias grep='grep --color'
-alias ls='ls -C --color'
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
 
 # ucsc kentutils
-export PATH="$PATH:/usr/local/bin/kentUtils"
+export PATH="/usr/local/bin:$PATH:/usr/local/bin/kentUtils"
 
 alias tg='ls -1 /usr/local/bin/kentUtils | egrep -i'
 alias hgsql='mysql --user=genome --host=genome-mysql.cse.ucsc.edu -A'
 
+# Xenon access
+alias suproxy="(pkill -f suproxy || true) && ssh -N suproxy"
+
 # misc.
 alias untar='tar -xvf'
+alias gpsql='psql -h hera -U assaydb_read -d assay_db'
