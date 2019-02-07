@@ -20,4 +20,4 @@ alias suproxy="(pkill -f suproxy || true) && ssh -N suproxy"
 
 # misc.
 alias untar='tar -xvf'
-alias gpsql='psql -h hera -U assaydb_read -d assay_db'
+alias jupyter='jupyter lab --ip=0.0.0.0 --no-browser'
