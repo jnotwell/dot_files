@@ -4,6 +4,7 @@ export EDITOR=vim
 
 # homebrew coreutils
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 alias grep='grep --color=auto'
@@ -20,4 +21,4 @@ alias suproxy="(pkill -f suproxy || true) && ssh -N suproxy"
 
 # misc.
 alias untar='tar -xvf'
-alias jupyter='jupyter lab --ip=0.0.0.0 --no-browser'
+alias jupyter='jupyter lab --ip=0.0.0.0'
