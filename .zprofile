@@ -3,17 +3,14 @@ export CLICOLOR=1
 export EDITOR=vim
 
 # homebrew coreutils
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
 
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 
 # ucsc kentutils
-export PATH="/usr/local/bin:$PATH:/usr/local/bin/kentUtils"
-
-alias tg='ls -1 /usr/local/bin/kentUtils | egrep -i'
 alias hgsql='mysql --user=genome --host=genome-mysql.cse.ucsc.edu -A'
 
 # Xenon access
