@@ -19,3 +19,6 @@ alias suproxy="(pkill -f suproxy || true) && ssh -N suproxy"
 # misc.
 alias untar='tar -xvf'
 alias jupyter='jupyter lab --ip=0.0.0.0'
+
+# https://apple.stackexchange.com/a/230447
+alias merge_pdf="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py"
